@@ -1,7 +1,17 @@
 # OldPasto
 
-""El fausto viejo tu sabe""
+**El viejo fausto tu sabe**
 
-Trabajos,Programas,archivos. C&amp;V.S.G
+**Autores:**
+
+**CPU bolas: @sergioaarangoh-cpu**
+
+**Git gay: @juancho-2006**
+
+**La booking.com: @Victor13578**
+
+
+ 
+Trabajos, programas, archivos POO. C&amp;V.S.G
 
 Bolasbolainas
