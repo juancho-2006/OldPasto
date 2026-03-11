@@ -1,0 +1,43 @@
+window#waybar {
+    background: transparent;
+    border: none;
+    margin: 7px 14px;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 10.5px;
+    color: #eaeaea;
+}
+
+/* Cada módulo dentro de su “burbuja” */
+.modules-left > * ,
+.modules-center > * ,
+.modules-right > * {
+    background: rgba(25, 25, 25, 0.2);
+    border-radius: 20px;
+    margin: 0 4px;
+    padding: 1px 6px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover */
+.modules-left > *:hover,
+.modules-center > *:hover,
+.modules-right > *:hover {
+    background: rgba(40, 40, 40, 0.3);
+}
+
+/* Colores personalizados */
+#clock { color: #d6b3ff; }
+#cpu { color: #9edfff; }
+#memory { color: #f5a5a5; }
+#network { color: #b7f5b7; }
+#battery { color: #ffe29a; }
+#pulseaudio, #wireplumber { color: #f0b3ff; }
+
+/* Estilo global */
+* {
+    border: none;
+    border-radius: 20px;
+    padding: 0 6px;
+}
+
