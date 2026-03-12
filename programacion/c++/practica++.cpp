@@ -107,6 +107,9 @@ if (esParoImpar(n)){
   impares++;
 }
 }
+cout << "Cantidad de pares: " << pares << '\n';
+cout << "Cantidad de impares: " << impares << '\n';
+
 }
 int main() {
   
@@ -149,9 +152,9 @@ if (esPrimo(pedirEntero())) {
 int n{pedirEntero()};
 cout << "El numero entero..." << endl;
 esNegativo(n);
-cout << "\n resultado de la suma consecutiva es: " <<sumaN(n)<< endl;
 esParoImpar(n); 
-
+contadorParesImpares(n);
+cout << "\n resultado de la suma consecutiva es: " <<sumaN(n)<< endl;
 return 0;
 
 }
