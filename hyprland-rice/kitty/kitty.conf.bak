@@ -1,0 +1,14 @@
+# Fuente Nerd Font correcta
+font_family JetBrainsMono Nerd Font
+font_size 8.8
+line_height 1.02
+
+# Habilitar control remoto para usar kitty @ ... 
+allow_remote_control yes
+
+# Tema de Kitty (catppuccin / otro)
+# BEGIN_KITTY_THEME
+# Blazer
+include current-theme.conf
+# END_KITTY_THEME
+
