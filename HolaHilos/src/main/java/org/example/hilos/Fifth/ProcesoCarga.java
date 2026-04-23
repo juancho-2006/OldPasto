@@ -14,9 +14,10 @@ public class ProcesoCarga implements Runnable {
 
     @Override
     public void run() {
-        while (progreso <= 100){
+        while (progreso < 250){
             progreso++;
             actualizar.run();
+
             try{
                 Thread.sleep((int)(Math.random()* 100));
             }catch(Exception e){

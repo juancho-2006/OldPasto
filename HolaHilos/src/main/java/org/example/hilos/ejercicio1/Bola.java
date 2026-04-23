@@ -18,9 +18,12 @@ public class Bola implements Runnable {
 
     @Override
     public void run() {
-        while (x< panel.getWidth()){
+        while (x <= panel.getWidth()){
             x = x + (int) (Math.random()*10);
             panel.repaint();
+            if (x >= panel.getWidth()){
+                System.out.println("Tenemos un ganador");
+            }
             try {
                 Thread.sleep(50);
             }catch(InterruptedException e){

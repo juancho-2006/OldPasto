@@ -29,7 +29,14 @@ public class VentanaDeCarga extends JPanel {
 
 
         graficador.setColor(Color.BLACK);
-        graficador.setFont(new Font("Arial", Font.BOLD, 50));
-        graficador.drawString("ff", 2,3);
+        graficador.setFont(new Font("Arial", Font.BOLD, 10));
+        graficador.drawString(String.valueOf(barraCarga1.getProgreso()), 15,50);
+
+        graficador.setColor(Color.BLACK);
+        graficador.setFont(new Font("Arial", Font.BOLD, 10));
+        graficador.drawString(String.valueOf(barraCarga2.getProgreso()), 15,200);
+
     }
+
+
 }
