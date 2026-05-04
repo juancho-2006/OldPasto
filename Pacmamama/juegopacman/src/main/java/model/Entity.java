@@ -14,11 +14,11 @@ import java.io.InputStream;
 public abstract class Entity {
 
     //Constantes manejo direccion entidad
-    protected static final int DIR_NONE = 0;
-    protected static final int DIR_LEFT = 1;
-    protected static final int DIR_UP = 2;
-    protected static final int DIR_RIGHT = 3;
-    protected static final int DIR_DOWN = 4;
+    public static final int DIR_NONE = 0;
+    public static final int DIR_LEFT = 1;
+    public static final int DIR_UP = 2;
+    public static final int DIR_RIGHT = 3;
+    public static final int DIR_DOWN = 4;
 
     private int x;
     private int y;
@@ -49,7 +49,7 @@ public abstract class Entity {
      * metodo para verificar colison
      */
 
-    public Rectangle getHitBox() {
+    public Rectangle getHitbox() {
         return new Rectangle(x, y, width, height);
     }
 
@@ -61,7 +61,7 @@ public abstract class Entity {
      * @return
      */
 
-    public Rectangle getHitBox(int px, int py) {
+    public Rectangle getHitbox(int px, int py) {
         return new Rectangle(px, py, width, height);
     }
 
@@ -101,7 +101,7 @@ public abstract class Entity {
      */
     public static BufferedImage uploadImage(String nombre) {
         try {
-            InputStream is = Entity.class.getResourceAsStream("/resources/images/" + nombre);
+            InputStream is = Entity.class.getResourceAsStream("/images/" + nombre);
             if (is == null) {
                 System.err.println("Imagen no encontrada: " + nombre);
                 return null;

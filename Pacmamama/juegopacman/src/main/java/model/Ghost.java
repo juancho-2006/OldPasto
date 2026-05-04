@@ -24,7 +24,7 @@ public abstract class Ghost extends Entity {
         this.speed = velocidad;
         this.stateEatable = false;
         this.countEatable = 0;
-        this.spriteOriginal = getSprite();
+        this.spriteOriginal = uploadImage(nameSprite);
         setDirection(dirInitial);
     }
 
@@ -42,10 +42,8 @@ public abstract class Ghost extends Entity {
 
     /**
      * Método encargado de invertir la dir del fantasma
-     * @param posPacX
-     * @param posPacY
      */
-    public void reverseDirection(int posPacX, int posPacY){
+    public void reverseDirection(){
         int direction = getDirection();
         if (direction == DIR_LEFT){
             setDirection(DIR_RIGHT);

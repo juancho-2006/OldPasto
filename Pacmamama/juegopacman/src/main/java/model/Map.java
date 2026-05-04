@@ -1,7 +1,5 @@
 package main.java.model;
 
-import java.awt.*;
-
 /**
  * Tablero/laberinto del juego. Contiene el diseño del nivel (mapa 21×21)
  * y construye la matriz de objetos (Muro, Punto, SuperPunto o vacío).
